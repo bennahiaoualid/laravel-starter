@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@custom-variant dark (&:not(*));
+@import 'tailwindcss';
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /* Font families */
+    --font-sans: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-arabic: "Cairo", sans-serif;
+  
+    /* Colors (you had many) */
+    --color-primary: #d5b263;
+    --color-primary-dark: #b89243;
+    --color-success: #10b981;
+    --color-success-dark: #059669;
+    --color-warning: #f59e0b;
+    --color-warning-dark: #d97706;
+    --color-info: #3b82f6;
+    --color-info-dark: #2563eb;
+    --color-danger: #ef4444;
+    --color-danger-dark: #dc2626;
+  
+    /* PG scheme from colors library (you’ll reference neutral, blue, etc) */
+    /* In v4, the default palette’s colors are exposed as CSS variables automatically. */
+  
+    /* Background images / gradients */
+    --bg-primary-elegant: linear-gradient(to right, #b224ef, #7579ff);
+  
+    /* Box shadows */
+    --shadow-card:  rgba(0,0,0,0.07) 0px 1px 2px, rgba(0,0,0,0.07) 0px 2px 4px, rgba(0,0,0,0.07) 0px 4px 8px, rgba(0,0,0,0.07) 0px 8px 16px, rgba(0,0,0,0.07) 0px 16px 32px, rgba(0,0,0,0.07) 0px 32px 64px;
+
+    /**** powergrid thems **/
+    --color-pg-primary-50: oklch(0.985 0 0);
+    --color-pg-primary-100: oklch(0.97 0 0);
+    --color-pg-primary-200: oklch(0.922 0 0);
+    --color-pg-primary-300: oklch(0.87 0 0);
+    --color-pg-primary-400: oklch(0.708 0 0);
+    --color-pg-primary-500: oklch(0.556 0 0);
+    --color-pg-primary-600: oklch(0.439 0 0);
+    --color-pg-primary-700: oklch(0.371 0 0);
+    --color-pg-primary-800: oklch(0.269 0 0);
+    --color-pg-primary-900: oklch(0.205 0 0);
+    --color-pg-primary-950: oklch(0.145 0 0);
+  
+  }
+
+  @layer base {  *,  ::after,  ::before,  ::backdrop,  ::file-selector-button {    border-color: var(--color-gray-200, currentColor);  }}
