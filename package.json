@@ -18,7 +18,6 @@
         "@tailwindcss/vite": "^4.1.16",
         "flatpickr": "^4.6.13",
         "jquery": "^3.7.1",
-        "puppeteer": "^24.30.0",
         "tailwindcss": "^4.1.16",
         "toastr": "^2.1.4"
     }

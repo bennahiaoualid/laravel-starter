@@ -28,13 +28,7 @@ class SystemSettingSeeder extends Seeder
                 'setting_key' => 'field',
                 'setting_value' => '',
                 'setting_trans_key' => 'settings.company_info.field',
-            ],
-            // Invoice Settings
-            [
-                'setting_key' => 'invoice_default_language',
-                'setting_value' => 'ar',
-                'setting_trans_key' => 'settings.invoice.invoice_default_language',
-            ],
+            ]
         ];
 
         foreach ($settings as $setting) {

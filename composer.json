@@ -22,10 +22,8 @@
         "pragmarx/google2fa-laravel": "^2.3",
         "pragmarx/google2fa-qrcode": "^3.0",
         "predis/predis": "^3.2",
-        "spatie/browsershot": "^5.0",
         "spatie/laravel-backup": "^9.3",
-        "spatie/laravel-permission": "^6.21",
-        "spatie/laravel-translatable": "^6.11"
+        "spatie/laravel-permission": "^6.21"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

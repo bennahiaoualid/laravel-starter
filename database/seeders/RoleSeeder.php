@@ -20,61 +20,6 @@ class RoleSeeder extends Seeder
             'update user',
             'delete user',
             'manage roles',
-            'view partie',
-            'add partie',
-            'update partie',
-            'delete partie',
-            'view investor',
-            'add investor',
-            'update investor',
-            'delete investor',
-            'view my_companies',
-            'add my_companies',
-            'update my_companies',
-            'delete my_companies',
-
-            'view purchase_order',
-            'add purchase_order',
-            'update purchase_order',
-            'delete purchase_order',
-
-            'view invoice',
-            'add invoice',
-            'update invoice',
-            'delete invoice',
-            'add delivery_receipt',
-            'delete delivery_receipt',
-
-            'view product',
-            'add product',
-            'update product',
-            'delete product',
-
-            'view money_transaction',
-            'add money_transaction',
-            'update money_transaction',
-            'delete money_transaction',
-
-            'view cost',
-            'add cost',
-
-            'view field',
-            'add field',
-            'update field',
-            'delete field',
-
-            'view bank',
-            'add bank',
-            'update bank',
-            'delete bank',
-
-            'view file',
-            'add file',
-            'delete file',
-
-            'manage documents',
-
-            'manage report',
 
         ];
 
@@ -92,6 +37,5 @@ class RoleSeeder extends Seeder
         foreach ($roles as $role) {
             $role = Role::firstOrCreate(['guard_name' => 'web', 'name' => $role]);
         }
-
     }
 }

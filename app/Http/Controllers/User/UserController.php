@@ -24,7 +24,6 @@ class UserController extends Controller
 
     public function __construct(
         protected UserService $userService,
-        protected DashboardService $dashboardService
     ) {}
 
     /**
@@ -32,9 +31,7 @@ class UserController extends Controller
      */
     public function index(): View
     {
-        $dashboardStats = $this->dashboardService->getDashboardStats();
-
-        return view('pages.user.dashboard', compact('dashboardStats'));
+        return view('pages.user.dashboard');
     }
 
     /**

@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'permissions' => 'Permissions',
+    'permissions' => 'الصلاحيات',
     'user' => [
-        'list' => 'Users',
+        'list' => 'المستخدمين',
     ],
     'settings' => [
-        'company_info' => 'Company settings',
+        'company_info' => 'إعدادات الشركة',
     ],
-    'system' => 'System',
-    'home' => 'home',
-    'log_out' => 'Sign out',
+    'system' => 'النظام',
+    'home' => 'الرئيسية',
+    'log_out' => 'تسجيل الخروج',
 
 ];
